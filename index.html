@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>ShareLoc</title>
+    <link href="js/frameworks/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />
+    <link href="js/frameworks/ratchet-2.0.2/dist/css/ratchet.css" rel="stylesheet">
+    <script type="text/javascript" charset="utf-8" src="js/frameworks/requirejs.js" data-main="js/main"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+</head>
+<body>
+    <header class="bar bar-nav">
+        <h1 class="title">ShareLoc</h1>
+    </header>
+    <div class="content">
+        <div id="main" style="position: relative; top:0; left:0; width: 100%; height: 91%;">
+            <!--View content here-->
+        </div>
+        <img src="" id="photo" style="position: relative; top:0; left:0; width: 100%; height: 91%;">
+        <nav class="bar bar-tab">
+            <a class="tab-item active" href="#">
+                <span class="icon icon-home"></span>
+                <span class="tab-label">Home</span>
+            </a>
+            <a class="tab-item" href="#showMap">
+                <span class="icon icon-person"></span>
+                <span class="tab-label">Map</span>
+            </a>
+            <a class="tab-item" href="#getPhoto">
+                <span class="icon icon-star-filled"></span>
+                <span class="tab-label">Favorites</span>
+            </a>
+            <a class="tab-item" href="#">
+                <span class="icon icon-search"></span>
+                <span class="tab-label">Search</span>
+            </a>
+            <a class="tab-item" href="#">
+                <span class="icon icon-gear"></span>
+                <span class="tab-label">Settings</span>
+            </a>
+        </nav>
+    </div>
+</body>
+</html>
